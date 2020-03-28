@@ -2,6 +2,14 @@
   "name": "reac-express-boilerplate",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "app-run": "node app/scripts/start.js",
+    "app-build": "node app/scripts/build.js",
+    "app-test": "node app/scripts/test.js",
+    "app-lint": "eslint app/src/**/*.js",
+    "app-lint:fix": "eslint --fix app/src/**/*.js"
+  },
+  "proxy": "http://localhost:1337",
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
@@ -64,13 +72,6 @@
     "workbox-webpack-plugin": "4.3.1",
     "body-parser": "latest",
     "express": "latest"
-  },
-  "scripts": {
-    "app-run": "node app/scripts/start.js",
-    "app-build": "node app/scripts/build.js",
-    "app-test": "node app/scripts/test.js",
-    "app-lint": "eslint app/src/**/*.js",
-    "app-lint:fix": "eslint --fix app/src/**/*.js"
   },
   "eslintConfig": {
     "extends": "react-app"
