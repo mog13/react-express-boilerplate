@@ -8,8 +8,12 @@
   --color-background: var(--colour-black);
 
   --spacing: 8px;
-  --spacing-s: calc(.5 * var(--spacing)) ;
-  --spacing-m: calc(2 * var(--spacing)) ;
-  --spacing-l: calc(3 * var(--spacing)) ;
-  --spacing-xl: calc(4 * var(--spacing)) ;
+  --spacing-s: calc(.5 * var(--spacing));
+  --spacing-m: calc(2 * var(--spacing));
+  --spacing-l: calc(3 * var(--spacing));
+  --spacing-xl: calc(4 * var(--spacing));
+
+  --spinner-size: 32px;
+  --spinner-thickness: 5px;
+  --spinner-speed: 1s;
 }
