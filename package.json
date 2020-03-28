@@ -8,7 +8,8 @@
     "app-test": "node app/scripts/test.js",
     "app-lint": "eslint app/src/**/*.js",
     "app-lint:fix": "eslint --fix app/src/**/*.js",
-    "server-run": "node server/index.js"
+    "server-run:dev": "npx nodemon ./server/index.js localhost 1337",
+    "server-run:prod": "node server/index.js"
   },
   "proxy": "http://localhost:1337",
   "dependencies": {
