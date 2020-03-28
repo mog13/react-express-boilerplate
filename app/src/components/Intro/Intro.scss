@@ -1,5 +1,6 @@
 .intro {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -7,5 +8,9 @@
 
   &__message {
     color: var(--colour-primary)
+  }
+
+  &__project {
+    color: var(--colour-secondary);
   }
 }
