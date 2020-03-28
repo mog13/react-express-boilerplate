@@ -5,17 +5,32 @@ import Intro from './components/Intro/Intro';
 
 import {createStore} from 'redux';
 import rootReducer from './store/reducers';
-import { Provider } from 'react-redux';
+import {Provider} from 'react-redux';
+import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 
 import './variables.scss';
 import './index.scss';
 
-const store = createStore(rootReducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
 	<React.StrictMode>
 		<Provider store={store}>
-			<Intro/>
+			<BrowserRouter>
+				{/*{nav/persistent stuff would go here}*/}
+				<Switch>
+					<Route path="/other">
+						<Intro message="you are now on another route"/>
+					</Route>
+					<Route default path="/">
+						<Intro>
+							<Link to="/other"> hello </Link>
+						</Intro>
+					</Route>
+
+				</Switch>
+
+			</BrowserRouter>
 		</Provider>
 	</React.StrictMode>,
 	document.getElementById('root')

@@ -6,17 +6,20 @@ import {getProjectName} from '../../store/reducers/example';
 
 import './Intro.scss';
 
-function Intro({message}) {
+function Intro({children, message}) {
 
 	const projectName = useSelector(getProjectName);
 
 	return <div className="intro">
-		<h1 className="intro__message"> {message} </h1> <h2 className='intro__project'>from project: {projectName}</h2>
+		<h1 className="intro__message"> {message} </h1>
+		<h2 className='intro__project'>from project: {projectName}</h2>
+		{children}
 	</div>;
 }
 
 Intro.propTypes = {
 	message: PropTypes.string,
+	children: PropTypes.element
 };
 
 Intro.defaultProps = {
