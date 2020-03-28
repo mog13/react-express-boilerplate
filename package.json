@@ -7,7 +7,8 @@
     "app-build": "node app/scripts/build.js",
     "app-test": "node app/scripts/test.js",
     "app-lint": "eslint app/src/**/*.js",
-    "app-lint:fix": "eslint --fix app/src/**/*.js"
+    "app-lint:fix": "eslint --fix app/src/**/*.js",
+    "server-run": "node server/index.js"
   },
   "proxy": "http://localhost:1337",
   "dependencies": {
