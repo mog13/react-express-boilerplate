@@ -9,7 +9,9 @@
     "app-lint": "eslint app/src/**/*.js",
     "app-lint:fix": "eslint --fix app/src/**/*.js",
     "server-run:dev": "npx nodemon ./server/index.js localhost 1337",
-    "server-run:prod": "node server/index.js"
+    "server-run:prod": "node server/index.js",
+    "docker-build": "docker build -t example .",
+    "docker-push": "docker push example"
   },
   "proxy": "http://localhost:1337",
   "dependencies": {
