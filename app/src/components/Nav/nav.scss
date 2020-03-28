@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: var(--spacing-xl) 0;
+
+  &__link {
+    color: var(--colour-primary);
+
+    &.active {
+      color: var(--colour-highlight);
+    }
+  }
+}
