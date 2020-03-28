@@ -7,7 +7,6 @@ function HomePage() {
 
 	return <main id="page-home">
 		<Intro/>
-		<Loading/>
 	</main>;
 }
 

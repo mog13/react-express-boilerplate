@@ -6,7 +6,7 @@ const app = express();
 const port = 1337;
 
 app.use(bodyParser.json());
-app.use(express.static('build'));
+app.use(express.static('../build'));
 
 //THIS IS NOT A GOOD IDEA AND IS HERE TEMPORARILY
 app.use(function (req, res, next) {
