@@ -66,7 +66,8 @@
     "app-run": "node app/scripts/start.js",
     "app-build": "node app/scripts/build.js",
     "app-test": "node app/scripts/test.js",
-    "app-lint": "eslint app/src/**/*.js"
+    "app-lint": "eslint app/src/**/*.js",
+    "app-lint:fix": "eslint --fix app/src/**/*.js"
   },
   "eslintConfig": {
     "extends": "react-app"
