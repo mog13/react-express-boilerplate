@@ -2,6 +2,7 @@ import React, {lazy, Suspense} from 'react';
 import {BrowserRouter, Redirect, Route, Switch} from 'react-router-dom';
 
 import Nav from '../components/Nav/Nav';
+import Loading from '../components/Loading/Loading';
 
 
 const HomePage = lazy(() => import('./HomePage'));
@@ -11,7 +12,7 @@ function Routes(){
 
 	return <BrowserRouter>
 		<Nav/>
-		<Suspense fallback={<h1> Loading </h1>}>
+		<Suspense fallback={<Loading/>}>
 			<Switch>
 				<Route exact path="/home" key="page-home" component={HomePage}/>
 				<Route exact path="/other" key="page-other" component={OtherPage}/>
