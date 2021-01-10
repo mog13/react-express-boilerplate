@@ -10,7 +10,7 @@ function Loading({showMessage, message}) {
 	</div>;
 }
 
-Loading.propTypes= {
+Loading.propTypes = {
 	message: PropTypes.string,
 	showMessage: PropTypes.bool
 };
