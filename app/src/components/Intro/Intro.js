@@ -7,7 +7,6 @@ import {getProjectName} from '../../store/reducers/example';
 import './Intro.scss';
 
 function Intro({children, message}) {
-
 	const projectName = useSelector(getProjectName);
 
 	return <div className="intro">
